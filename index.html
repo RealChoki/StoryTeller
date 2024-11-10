@@ -84,8 +84,8 @@
     </div>
   
     <div class="section">
-      <p>Mit einem schelmischen Funkeln in den Augen fragte Choki: „Hier ist mein Rätsel, Bruder: Was hat keine Flügel, kann aber fliegen, und hat kein Maul, kann aber sprechen? Komm schon, gib mir die Antwort, wa!“ Vincee kratzte sich am Kopf. Er überlegte, und plötzlich schrie er: „AHHHH! Ich hab's! Ein Drache im Märchen!“</p>
-      <button class="play-button" onclick="playSection(4)">Abschnitt vorlesen</button>
+        <p>Mit einem schelmischen Funkeln in den Augen fragte Choki: „Ich komme in verschiedenen Sorten und kann viele Zutaten haben: Fleisch, Salat und Soße, das ist mein Leben! Manchmal bin ich klein, manchmal groß, und wenn du mich isst, bist du sofort voll! Was bin ich? Komm schon, gib mir die Antwort, wa!“ Vincee kratzte sich am Kopf. Er überlegte, und plötzlich schrie er: „Ehh, na klar, ein Döner!“</p>
+        <button class="play-button" onclick="playSection(4)">Abschnitt vorlesen</button>
     </div>
   
     <div class="section">
@@ -110,7 +110,7 @@
         "Im dunklen Zauberwald hörte Vincee ein lautes Grollen. Plötzlich donnerte eine Stimme: 'WAAAS? Wer wagt es, mein Reich zu betreten?' Vincee blieb stehen, sein Herz pochte schnell, aber er rief mutig: 'Ich bin der Ritter Vincee! Lass meinen Onkel frei!'",
         "Da tauchte der riesige Drache Choki aus dem Schatten auf, seine Schuppen funkelten und seine Augen blitzten neugierig. Er grinste und sagte: 'Du? Ein kleiner Ritter willst mich besiegen? Hahaha! Was los, Bruder, du bist zu klein für mich, ya salame!' Vincee schluckte, aber dann rief er tapfer: 'JA! Weil ich tapfer bin und für meine Familie kämpfe!'",
         "Choki lachte laut und blies dabei Rauch aus seinen Nasenlöchern. 'Na gut, kleiner Ritter,' brüllte er. 'Wenn du deinen Onkel zurückhaben willst, musst du erst ein Rätsel lösen, habibi!' Vincee nickte mutig: 'Ich bin bereit!'",
-        "Mit einem schelmischen Funkeln in den Augen fragte Choki: 'Hier ist mein Rätsel, Bruder: Was hat keine Flügel, kann aber fliegen, und hat kein Maul, kann aber sprechen? Komm schon, gib mir die Antwort, wa!' Vincee kratzte sich am Kopf. Er überlegte, und plötzlich schrie er: 'AHHHH! Ich hab's! Ein Drache im Märchen!'",
+        "Mit einem schelmischen Funkeln in den Augen fragte Choki: „Ich komme in verschiedenen Sorten und kann viele Zutaten haben: Fleisch, Salat und Soße, das ist mein Leben! Manchmal bin ich klein, manchmal groß, und wenn du mich isst, bist du sofort voll! Was bin ich? Komm schon, gib mir die Antwort, wa!“ Vincee kratzte sich am Kopf. Er überlegte, und plötzlich schrie er: 'Ehh, na klar, ein Döner!'",
         "Choki schnaubte vor Überraschung. 'Hahaha! Richtig, kleiner Ritter! Du bist wirklich mutig und schlau. Dein Onkel ist frei! Guter Job, bruder, aber jetzt lass uns feiern, ya habibi! Und schau dir mal meine riesige Biceps an, die sind krasser als alles, was du je gesehen hast!' Vincee lief jubelnd zu Onkel Toni und sie umarmten sich. Da lachte Choki noch einmal laut: 'Kommt mit, meine Freunde! Lasst uns zur Feier Döner essen in meiner Drachenhöhle!'",
         "Und so verbrachten Vincee, sein Onkel Toni und der Drache Choki einen fröhlichen Abend zusammen in Chokis Dönerbude. Sie lachten über ihre Abenteuer, und Vincee durfte so viel Döner essen, wie er wollte. Alles Gute zum Geburtstag, tapferer Ritter Vincee! Mögen all deine Abenteuer so mutig und fröhlich sein."
       ];
@@ -125,7 +125,7 @@
       currentUtterance = new SpeechSynthesisUtterance(sections[index]);
       currentUtterance.lang = "de-DE";
       currentUtterance.pitch = 1.2;
-      currentUtterance.rate = 1;
+      currentUtterance.rate = 1.5;
       synth.speak(currentUtterance);
     }
 
@@ -139,7 +139,7 @@
           currentUtterance = new SpeechSynthesisUtterance(sections[index]);
           currentUtterance.lang = "de-DE";
           currentUtterance.pitch = 1.2;
-          currentUtterance.rate = 1;
+          currentUtterance.rate = 1.5;
           currentUtterance.onend = () => {
             index++;
             playNextSection();
